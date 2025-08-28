@@ -1,0 +1,111 @@
+@font-face {
+  font-family: primaryHeader;
+  src: url(../src/assets/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf);
+}
+
+@font-face {
+  font-family: primaryContent;
+  src: url(../src/assets/fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  /* background-color: #111727; */
+  background: linear-gradient(135deg, #E6F2FF 0%, #3A4D8F 50%, #111727 100%);
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.left {
+  background-color: #202938dc;
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.code {
+  height: 100%;
+  width: 100%;
+}
+
+.review-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #3A4D8F;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 0.7rem;
+  font-family: primaryContent;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  border-radius: 0.75rem;
+  max-width: 50%;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}
+
+.review-container {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Style the scrollbar */
+.review-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.review-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.review-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.review-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Ensure code blocks don't overflow */
+.review-container {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+/* Ensure markdown content doesn't overflow */
+.review-container * {
+  max-width: 100%;
+}
