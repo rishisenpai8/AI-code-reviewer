@@ -1,5 +1,8 @@
 # Code Reviewer AI 🤖
 
+#Demo Video
+https://github.com/user-attachments/assets/272520aa-b3ef-4cf5-8556-17e5e9af7b36
+
 An AI-powered code review tool that uses Google's Gemini AI to provide instant code reviews, suggestions, and optimizations for your code.
 
 ## Features ✨
